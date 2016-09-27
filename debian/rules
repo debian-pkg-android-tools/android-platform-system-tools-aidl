@@ -1,0 +1,35 @@
+#!/usr/bin/make -f
+
+export DEB_LDFLAGS_MAINT_APPEND = -fPIC
+export DEB_CPPFLAGS_MAINT_APPEND = -I/usr/include/android
+export DEB_CXXFLAGS_MAINT_APPEND = -DNDEBUG
+
+lib%.so: debian/lib%.mk
+	make -f $<
+
+aidl: debian/aidl.mk libaidl-common.so
+	make -f $<
+
+aidl-cpp: debian/aidl-cpp.mk libaidl-common.so
+	make -f $<
+
+debian/%.1: debian/%.1.md
+	pandoc -s -o $@ $<
+
+docs/aidl-cpp.html: docs/aidl-cpp.md
+	pandoc -s -t html5 -o $@ $<
+
+%:
+	dh $@
+
+override_dh_auto_build: aidl aidl-cpp docs/aidl-cpp.html debian/aidl.1 debian/aidl-cpp.1
+
+override_dh_auto_clean:
+	dh_auto_clean
+	make clean -f debian/aidl.mk
+	make clean -f debian/aidl-cpp.mk
+	make clean -f debian/libaidl-common.mk
+	$(RM) debian/*.1 docs/aidl-cpp.html
+
+get-orig-source:
+	uscan --download-current-version --force-download --rename

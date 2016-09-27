@@ -1,0 +1,21 @@
+Source: android-platform-system-tools-aidl
+Section: devel
+Priority: optional
+Maintainer: Android Tools Maintainers <android-tools-devel@lists.alioth.debian.org>
+Uploaders: Kai-Chung Yan <seamlikok@gmail.com>
+Build-Depends: android-libbase-dev (>= 1:7.0.0),
+               android-libcutils-dev (>= 7.0.0),
+               bison,
+               debhelper (>=10),
+               dh-exec,
+               flex,
+               pandoc
+Standards-Version: 3.9.8
+Homepage: https://android.googlesource.com/platform/system/tools/aidl
+Vcs-Git: https://anonscm.debian.org/git/android-tools/android-platform-system-tools-aidl.git
+Vcs-Browser: https://anonscm.debian.org/cgit/android-tools/android-platform-system-tools-aidl.git
+
+Package: aidl
+Architecture: amd64 i386 armel armhf arm64 mips mipsel mips64el
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Binder generator of AIDL interfaces

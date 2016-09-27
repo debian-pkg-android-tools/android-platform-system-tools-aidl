@@ -1,0 +1,5 @@
+#!/usr/bin/dh-exec
+
+aidl               usr/bin
+aidl-cpp           usr/bin
+libaidl-common.so* usr/lib/${DEB_HOST_MULTIARCH}/android

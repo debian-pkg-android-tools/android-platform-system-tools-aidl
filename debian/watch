@@ -1,0 +1,7 @@
+version=4
+opts="pagemangle=s%\">android-%\.tar\.gz\">android-%g;s%/\+/%/+archive/%g, \
+      uversionmangle=s%\.(\d+)\.\.tar\.gz%\+r$1%, \
+      filenamemangle=s%[\w\/]+\+archive\/android-%@PACKAGE@-%" \
+https://android.googlesource.com/platform/system/tools/aidl/+refs \
+    [\w\/]+\+archive\/android-([0-9\.]+)_r(\d+|\d+\.\d+|\w)(\.tar\.gz) debian uupdate
+
