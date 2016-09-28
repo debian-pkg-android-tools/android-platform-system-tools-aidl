@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Android Tools Maintainers <android-tools-devel@lists.alioth.debian.org>
 Uploaders: Kai-Chung Yan <seamlikok@gmail.com>
 Build-Depends: android-libbase-dev (>= 1:7.0.0),
-               android-libcutils-dev (>= 7.0.0),
+               android-libcutils-dev (>= 1:7.0.0),
                bison,
                debhelper (>=10),
                dh-exec,
