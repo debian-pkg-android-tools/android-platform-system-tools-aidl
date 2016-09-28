@@ -1,4 +1,4 @@
-android-platform-system-tools-aidl (7.0.0+r1-1) UNRELEASED; urgency=medium
+android-platform-system-tools-aidl (1:7.0.0+r1-1) UNRELEASED; urgency=medium
 
   * Initial release (Closes: #XXXXXX)
 
