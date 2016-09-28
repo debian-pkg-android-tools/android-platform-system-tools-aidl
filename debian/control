@@ -9,6 +9,7 @@ Build-Depends: android-libbase-dev (>= 1:7.0.0),
                debhelper (>=10),
                dh-exec,
                flex,
+               libgtest-dev,
                pandoc
 Standards-Version: 3.9.8
 Homepage: https://android.googlesource.com/platform/system/tools/aidl
