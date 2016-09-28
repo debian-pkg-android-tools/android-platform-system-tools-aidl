@@ -1,0 +1,14 @@
+Description: api.pure declaration seems incompatible with Bison 3.x
+Author: Kai-Chung Yan (殷啟聰)
+Last-Update: 2016-09-28
+Forwarded: not-needed
+--- a/aidl_language_y.yy
++++ b/aidl_language_y.yy
+@@ -14,7 +14,6 @@
+ %parse-param { Parser* ps }
+ %lex-param { void *lex_scanner }
+ 
+-%pure-parser
+ %skeleton "glr.cc"
+ 
+ %union {
