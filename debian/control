@@ -30,7 +30,10 @@ Description: Binder generator of AIDL interfaces
  into primitives that the operating system can understand, and
  marshall the objects across that boundary for you. The code to do
  that marshalling is tedious to write, so Android handles it for you
- with AIDL.
+ with AIDL. This package provides two tools:
+ .
+   * "aidl" which generates Java bindings.
+   * "aidl-cpp" which generates C++ bindings.
  .
  For more info, see:
  https://developer.android.com/guide/components/aidl.html
