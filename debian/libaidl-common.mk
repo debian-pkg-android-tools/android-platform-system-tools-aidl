@@ -18,7 +18,7 @@ SOURCES = aidl.cpp \
           type_namespace.cpp
 LDFLAGS += -shared -Wl,-soname,$(NAME).so.0 \
            -Wl,-rpath=/usr/lib/$(DEB_HOST_MULTIARCH)/android \
-           -L/usr/lib/$(DEB_HOST_MULTIARCH)/android -lbase -lcutils
+           -L/usr/lib/$(DEB_HOST_MULTIARCH)/android -lbase
 
 build: $(SOURCES)
 	$(CXX) $^ -o $(NAME).so.0 $(CXXFLAGS) $(CPPFLAGS) $(LDFLAGS)
