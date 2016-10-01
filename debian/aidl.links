@@ -1,0 +1,4 @@
+#!/usr/bin/dh-exec
+
+usr/lib/android-sdk/build-tools/${ANDROID_BUILD_TOOLS_VERSION}/aidl     usr/bin/aidl
+usr/lib/android-sdk/build-tools/${ANDROID_BUILD_TOOLS_VERSION}/aidl-cpp usr/bin/aidl-cpp
