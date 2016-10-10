@@ -1,5 +1,5 @@
 #!/usr/bin/dh-exec
 
-aidl               usr/lib/android-sdk/build-tools/${ANDROID_BUILD_TOOLS_VERSION}
-aidl-cpp           usr/lib/android-sdk/build-tools/${ANDROID_BUILD_TOOLS_VERSION}
+aidl               usr/lib/android-sdk/build-tools/debian
+aidl-cpp           usr/lib/android-sdk/build-tools/debian
 libaidl-common.so* usr/lib/${DEB_HOST_MULTIARCH}/android
