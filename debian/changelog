@@ -1,3 +1,13 @@
+android-platform-system-tools-aidl (1:7.0.0+r1-2) unstable; urgency=medium
+
+  * upload to unstable
+  * d/control: Improve package description
+  * d/libaidl-common.mk: No longer link against libcutils
+  * Install the executables into Android SDK home
+  * Set the dynamic BUILD_TOOLS_VERSION to debian
+
+ -- Kai-Chung Yan <seamlikok@gmail.com>  Wed, 07 Dec 2016 16:23:24 +0100
+
 android-platform-system-tools-aidl (1:7.0.0+r1-1) experimental; urgency=medium
 
   * Initial release (Closes: #839053)
