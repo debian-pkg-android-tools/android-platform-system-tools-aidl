@@ -2,7 +2,8 @@ Source: android-platform-system-tools-aidl
 Section: devel
 Priority: optional
 Maintainer: Android Tools Maintainers <android-tools-devel@lists.alioth.debian.org>
-Uploaders: Kai-Chung Yan <seamlikok@gmail.com>
+Uploaders: Kai-Chung Yan <seamlikok@gmail.com>,
+           Hans-Christoph Steiner <hans@eds.org>
 Build-Depends: android-libbase-dev (>= 1:7.0.0+r33~),
                android-libcutils-dev (>= 1:7.0.0+r33~),
                bison,
