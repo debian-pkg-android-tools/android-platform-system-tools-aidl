@@ -1,3 +1,9 @@
+android-platform-system-tools-aidl (1:7.0.0+r33-1) unstable; urgency=medium
+
+  * New upstream release
+
+ -- Hans-Christoph Steiner <hans@eds.org>  Tue, 25 Apr 2017 22:30:07 +0200
+
 android-platform-system-tools-aidl (1:7.0.0+r1-2) unstable; urgency=medium
 
   * upload to unstable
